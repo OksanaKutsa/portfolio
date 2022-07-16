@@ -89,3 +89,11 @@ p {
     padding-bottom: 30px;
   }
 }
+@media (max-width: 1094px) {
+  .project-description {
+    padding: 20px 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
