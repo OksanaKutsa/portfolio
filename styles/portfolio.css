@@ -53,6 +53,23 @@ p {
   line-height: 2;
   color: var(--p-text-color);
 }
+.about-section {
+  padding: 80px 20px;
+}
+.about-section-content {
+  margin-right: 20px;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--main-font-family);
+}
 .btn-branding {
   background-color: var(--button-bg-color);
   color: white;
@@ -88,6 +105,17 @@ p {
     padding-top: 80px;
     padding-bottom: 30px;
   }
+  .about-section {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .about-section h1 {
+    font-size: 44px;
+    line-height: 1;
+  }
+  .about-section .btn-branding {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 1094px) {
   .project-description {
@@ -95,5 +123,9 @@ p {
   }
   h2 {
     font-size: 40px;
+  }
+  .about-section-content {
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
