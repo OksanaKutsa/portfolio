@@ -4,6 +4,7 @@ font-family: 'Poppins', sans-serif; */
   --main-bg-color: #fdf1eb;
   --second-bg-color: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   --button-bg-color: #9896f1;
+  --hover-color: #7c73e6;
   --heading-font-family: "Playfair Display", serif;
   --main-font-family: "Poppins", sans-serif;
   --p-text-color: #272142;
@@ -53,22 +54,28 @@ p {
   line-height: 2;
   color: var(--p-text-color);
 }
-.about-section {
+.content-container {
   padding: 80px 20px;
 }
-.about-section-content {
+.content {
   margin-right: 20px;
   margin-left: 80px;
   margin-top: 40px;
 }
 
-.about-section h1 {
+.content h1 {
   font-size: 64px;
   line-height: 80px;
 }
-.about-section h2 {
+.content h2 {
   font-size: 18px;
   font-family: var(--main-font-family);
+}
+.content h4 {
+  font-size: var(--main-font-family);
+  line-height: 1.5;
+  margin: 15px 0px 0px;
+  color: var(--p-text-color);
 }
 .btn-branding {
   background-color: var(--button-bg-color);
@@ -89,6 +96,32 @@ p {
 .project-description {
   padding: 40px 60px;
 }
+.project-link {
+  color: var(--button-bg-color);
+  text-decoration: none;
+}
+.project-link:hover {
+  color: var(--hover-color);
+}
+@media (max-width: 1189px) {
+  .content {
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1095px) {
+  .project-description {
+    padding: 20px 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .content {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
 @media (max-width: 960px) {
   h1 {
     font-size: 44px;
@@ -105,27 +138,15 @@ p {
     padding-top: 80px;
     padding-bottom: 30px;
   }
-  .about-section {
+  .content-container {
     padding-top: 20px;
     text-align: center;
   }
-  .about-section h1 {
+  .content-container h1 {
     font-size: 44px;
     line-height: 1;
   }
-  .about-section .btn-branding {
+  .content-container .btn-branding {
     margin-bottom: 20px;
-  }
-}
-@media (max-width: 1094px) {
-  .project-description {
-    padding: 20px 60px;
-  }
-  h2 {
-    font-size: 40px;
-  }
-  .about-section-content {
-    margin-left: 0px;
-    margin-top: 0px;
   }
 }
