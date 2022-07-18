@@ -102,9 +102,36 @@ p {
 a {
   color: var(--button-bg-color);
   text-decoration: none;
+  transition: all 100ms ease-in-out;
 }
-.project-link:hover {
+a:hover,
+nav li.active a {
   color: var(--hover-color);
+}
+.logo {
+  max-height: 40px;
+}
+.nav-bar {
+  background-color: #fcfefe;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  color: var(--p-text-color);
 }
 @media (max-width: 1189px) {
   .content {
@@ -151,5 +178,10 @@ a {
   }
   .content-container .btn-branding {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 397px) {
+  nav a {
+    font-size: 14px;
   }
 }
