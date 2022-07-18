@@ -133,6 +133,23 @@ nav li {
 nav a {
   color: var(--p-text-color);
 }
+footer {
+  margin: 60px 0;
+}
+footer .email-link {
+  color: var(--p-text-color);
+  font-size: 24px;
+}
+footer .email-link:hover {
+  color: var(--hover-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  background: #f9f7fe;
+  padding: 10px 17px;
+  font-size: 25px;
+  border-radius: 50%;
+}
 @media (max-width: 1189px) {
   .content {
     margin-right: 10px;
@@ -140,7 +157,7 @@ nav a {
     margin-top: 10px;
   }
 }
-@media (max-width: 1095px) {
+@media (max-width: 1196px) {
   .project-description {
     padding: 20px 60px;
   }
