@@ -57,6 +57,9 @@ p {
 .content-container {
   padding: 80px 20px;
 }
+.contact-content {
+  text-align: center;
+}
 .content {
   margin-right: 20px;
   margin-left: 80px;
@@ -96,7 +99,7 @@ p {
 .project-description {
   padding: 40px 60px;
 }
-.project-link {
+a {
   color: var(--button-bg-color);
   text-decoration: none;
 }
