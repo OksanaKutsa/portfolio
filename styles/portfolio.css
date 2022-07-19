@@ -55,7 +55,7 @@ p {
   color: var(--p-text-color);
 }
 .content-container {
-  padding: 80px 20px;
+  padding: 80px 20px 20px 20px;
 }
 .contact-content {
   text-align: center;
@@ -82,11 +82,16 @@ p {
 }
 .btn-branding {
   background-color: var(--button-bg-color);
-  color: white;
+  color: #fcfefe;
   font-size: 18px;
   border-radius: 4px;
   line-height: 27px;
   padding: 15px 30px;
+  transition: all 100ms ease-in-out;
+}
+.btn-branding:hover {
+  background-color: #fcfefe;
+  color: var(--button-bg-color);
 }
 .btn-branding-outline {
   color: var(--button-bg-color);
